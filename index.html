@@ -16,7 +16,7 @@
 <body>
     <div class="container container-fix">
         <div class="row">
-            <div class="col-6 bg-success tittle form_inputs_margin">
+            <div class="col-12 bg-success tittle form_inputs_margin">
                 <h3><span class="tittlefix"> The </span> Programming Language Selector.</h3>
                 <p>Here's a simple survey to suggest you a Programming Language based on the answers you choose:</p>
             </div>
@@ -27,10 +27,10 @@
                     <!-- Name-->
                     <div class="row form_inputs_margin">
                         <div class="col">
-                          <input type="text" class="form-control" placeholder="First name">
+                          <input type="text" class="form-control" id="firstName" placeholder="First name">
                         </div>
                         <div class="col">
-                          <input type="text" class="form-control" placeholder="Last name">
+                          <input type="text" class="form-control" id="lastName" placeholder="Last name">
                         </div>
                       </div>
                     <!-- Age -->
@@ -100,6 +100,12 @@
 
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+            </div>
+            <!-- Results -->
+            <div class="col-6 bg-primary javascript">
+                <h4>Based on your answers,<br> you should consider to study</h4>
+                <h1>JavaScript</h1>
+
             </div>
         </div>
     </div>
