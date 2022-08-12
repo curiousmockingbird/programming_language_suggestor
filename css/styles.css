@@ -24,7 +24,12 @@ display: none;
 
 }
 
-.rule{
-    padding-top: 5%;
+.rule {
+    color: aliceblue;
+    padding-top: 13%;
     text-align: center;
+}
+
+.error {
+    color: crimson;
 }

@@ -1,6 +1,8 @@
+// onload event 
 window.onload = function () {
     let form = document.querySelector("form");
 
+    // function to access user input and branching based on input
     function displayResults(event) {
         event.preventDefault();
         // get the user input values
@@ -12,6 +14,7 @@ window.onload = function () {
         const freeTime = parseInt(document.getElementById("hobby").value);
         const animal = parseInt(document.querySelector("input[name='animal']:checked").value);
         const scale = document.getElementById("range").value;
+
         // conditions for suggesting JavaScript after submission 
         if (age <= 30 && movies == 1 && freeTime === 1 && animal === 1 && scale < 5) {
             document.getElementById("results").removeAttribute("class", "hidden");
@@ -27,6 +30,11 @@ window.onload = function () {
             document.getElementById("nameOfUser").innerHTML = userName + ",";
             document.getElementById("language").innerHTML = "C#";
 
+        } 
+        // display error message if user doesn't type in first name or last name 
+        else if (firstName === "" || lastName === "" ){
+            document.getElementById("error").removeAttribute("class", "hidden");
+            document.getElementById("error").setAttribute("class", "col-6 rule");
         }
         // else, suggest Python after submission 
         else {
@@ -35,9 +43,10 @@ window.onload = function () {
             document.getElementById("nameOfUser").innerHTML = userName + ",";
             document.getElementById("language").innerHTML = "Python";
         }
-
+        
     };
-    // function to clear forms
+
+    // function to clear forms after submission
     function clearForm() {
         document.getElementById("firstName").value = null;
         document.getElementById("lastName").value = null;
@@ -46,6 +55,7 @@ window.onload = function () {
         document.getElementById("range").value = "0";
     };
 
+    // eventListeners for submit event
     form.addEventListener("submit", displayResults);
     form.addEventListener("submit", clearForm);
 }
