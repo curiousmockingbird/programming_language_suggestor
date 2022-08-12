@@ -1,4 +1,4 @@
-#### Application name:
+### Application name:
 Programming Language Suggester.
 
 ### Names of contributors
@@ -8,7 +8,7 @@ Harold Mesa.
 A survey that suggest users what Programming Language to study based on the answers they provide.
 
 ### Link to site on GitHub Pages:
-Please [click here]()
+Please [click here](https://curiousmockingbird.github.io/programming_language_suggestor/)
 
 ### Technologies used:
 HTML, CSS, Bootstrap and JavaScript.
