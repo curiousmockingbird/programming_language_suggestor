@@ -21,12 +21,14 @@ HTML, CSS, Bootstrap and JavaScript.
 5. When submitting:
    a) If user is under 30 years old, likes action movies, likes to read, identifies with dogs, but doesn't believe much in miracles,
    the Programming Language Suggester will suggest JavaScript.
-   b) 
+   b) If user is older than 30, likes comedies, identifies with cats, but believes in miracles, the Suggester will indicate them to study
+   C#.
+   c) Else, the program will indicate to study Python.
 
 
 ### Known bugs
 The branching for the program works. 
-If user doesn't type their name, an error messages will display in the page.
+If the user doesn't type in their name, an error messages will display in the page.
 
 
 Copyright (c) _Aug 12, 2022_ _Harold Mesa_

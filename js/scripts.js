@@ -15,8 +15,13 @@ window.onload = function () {
         const animal = parseInt(document.querySelector("input[name='animal']:checked").value);
         const scale = document.getElementById("range").value;
 
+        // display error message if user doesn't type in first name or last name 
+        if (firstName === "" || lastName === "") {
+            document.getElementById("error").removeAttribute("class", "hidden");
+            document.getElementById("error").setAttribute("class", "col-6 rule");
+
         // conditions for suggesting JavaScript after submission 
-        if (age <= 30 && movies == 1 && freeTime === 1 && animal === 1 && scale < 5) {
+        } else if (age <= 30 && movies == 1 && freeTime === 1 && animal === 1 && scale < 5) {
             document.getElementById("results").removeAttribute("class", "hidden");
             document.getElementById("results").setAttribute("class", "col-6 bg-primary rule");
             document.getElementById("nameOfUser").innerHTML = userName + ",";
@@ -30,21 +35,15 @@ window.onload = function () {
             document.getElementById("nameOfUser").innerHTML = userName + ",";
             document.getElementById("language").innerHTML = "C#";
 
-        } 
-        // display error message if user doesn't type in first name or last name 
-        else if (firstName === "" || lastName === "" ){
-            document.getElementById("error").removeAttribute("class", "hidden");
-            document.getElementById("error").setAttribute("class", "col-6 rule");
         }
-        // else, suggest Python after submission 
+         // else, suggest Python after submission 
         else {
             document.getElementById("results").removeAttribute("class", "hidden");
             document.getElementById("results").setAttribute("class", "col-6 bg-danger rule");
             document.getElementById("nameOfUser").innerHTML = userName + ",";
             document.getElementById("language").innerHTML = "Python";
         }
-        
-    };
+};
 
     // function to clear forms after submission
     function clearForm() {
