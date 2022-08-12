@@ -1,3 +1,20 @@
 .container-fix{
-    margin-top: 5%;
+    margin-top: 2%;
+}
+
+.tittle {
+    padding: 4%;
+} 
+
+.tittle p {
+    color: aliceblue;
+}
+
+.tittlefix {
+    font-variant-caps: all-small-caps ;
+    color: aliceblue;
+}
+
+.form_inputs_margin {
+    margin-bottom: 2%;
 }

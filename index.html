@@ -16,33 +16,88 @@
 <body>
     <div class="container container-fix">
         <div class="row">
+            <div class="col-6 bg-success tittle form_inputs_margin">
+                <h3><span class="tittlefix"> The </span> Programming Language Selector.</h3>
+                <p>Here's a simple survey to suggest you a Programming Language based on the answers you choose:</p>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-6">
                 <form>
                     <!-- Name-->
-                    <div class="form-group">
-                        <label for="userName">What's your name?</label>
-                        <input type="text" class="form-control" id="userName" />
-                        <!--<small id="userNameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                    </div>
+                    <div class="row form_inputs_margin">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                      </div>
                     <!-- Age -->
-                    <div class="form-group">
+                    <div class="form-group form_inputs_margin">
                         <label for="userAge">How old are you?</label>
-                        <input type="number" class="form-control" id="userAge" />
+                        <input type="number" class="form-control" id="userAge" placeholder="Age">
                     </div>
                     <!-- Fav movie genres -->
                     <h4>Tell us a little bit about you:</h4>
+                    <h6> Which movie genre from the list do you like the most?</h6>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <input class="form-check-input" type="radio" value="1" name="radio" checked>
                         <label class="form-check-label" for="defaultCheck1">
-                            Default checkbox
+                            Action movies
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled />
+                        <input class="form-check-input" type="radio" value="2" name="radio" >
                         <label class="form-check-label" for="defaultCheck2">
-                            Disabled checkbox
+                            Comedy
                         </label>
                     </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="3" name="radio" >
+                        <label class="form-check-label" for="defaultCheck2">
+                            Horror/Thrillers
+                        </label>
+                    </div>
+                    <div class="form-check form_inputs_margin">
+                        <input class="form-check-input" type="radio" value="4" name="radio">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Anime
+                        </label>
+                    </div>
+                    <!-- What would you rather do? -->
+                    <div class="form-group form_inputs_margin">
+                        <label for="hobby">What would you rather do in your free time?</label>
+                        <select id="hobby" class="form-control">
+                          <option selected>Choose...</option>
+                          <option> Read a book </option>
+                          <option> Play video games </option>
+                          <option> Go to the gym </option>
+                          <option> Visit friends/family </option>
+                        </select>
+                      </div>
+
+                      <!-- Animal -->
+                      <h6> What animal would you rather be? </h6>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="animal" id="inlineRadio1" value="Dog" checked>
+                        <label class="form-check-label" for="inlineRadio1"> Dog</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="animal" id="inlineRadio2" value="Cat">
+                        <label class="form-check-label" for="inlineRadio2"> Cat </label>
+                      </div>
+                      <div class="form-check form-check-inline form_inputs_margin">
+                        <input class="form-check-input" type="radio" name="animal" id="inlineRadio3" value="Bird" >
+                        <label class="form-check-label" for="inlineRadio3"> Bird </label>
+                      </div>
+                      <!-- Scale -->
+                      <div class="form-group form_inputs_margin">
+                        <h6> On a scale from 1 to 10: </h6>
+                        <label for="range"> How much do you believe in miracles? </label>
+                        <input type="range" class="form-control-range" id="range" min="0" max="10">
+                      </div>
+
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
