@@ -8,22 +8,37 @@ window.onload = function () {
         const lastName = document.getElementById("lastName").value;
         const userName = firstName + " " + lastName;
         const age = parseInt(document.getElementById("userAge").value);
-        console.log(age);
         const movies = parseInt(document.querySelector("input[name='radio']:checked").value);
-        console.log(movies);
-
         const freeTime = parseInt(document.getElementById("hobby").value);
         const animal = parseInt(document.querySelector("input[name='animal']:checked").value);
         const scale = document.getElementById("range").value;
+        // conditions for suggesting JavaScript after submission 
+        if (age <= 30 && movies == 1 && freeTime === 1 && animal === 1 && scale < 5) {
+            document.getElementById("results").removeAttribute("class", "hidden");
+            document.getElementById("results").setAttribute("class", "col-6 bg-primary rule");
+            document.getElementById("nameOfUser").innerHTML = userName + ",";
+            document.getElementById("language").innerHTML = "JavaScript";
 
-        if ( age <= 30 && movies == 1 && freeTime === 1 && animal === 1 && scale < 5 )
-         {
-            console.log("Works");
-            /* document.querySelector("div.javascript").removeAttribute("class", "hidden");*/        };
+        }
+        // conditions for suggesting C# after submission 
+        else if (age > 30 && movies === 2 && freeTime === 2 && animal === 2 && scale > 5) {
+            document.getElementById("results").removeAttribute("class", "hidden");
+            document.getElementById("results").setAttribute("class", "col-6 bg-secondary rule");
+            document.getElementById("nameOfUser").innerHTML = userName + ",";
+            document.getElementById("language").innerHTML = "C#";
+
+        }
+        // else, suggest Python after submission 
+        else {
+            document.getElementById("results").removeAttribute("class", "hidden");
+            document.getElementById("results").setAttribute("class", "col-6 bg-danger rule");
+            document.getElementById("nameOfUser").innerHTML = userName + ",";
+            document.getElementById("language").innerHTML = "Python";
+        }
 
     };
     // function to clear forms
-    function clearForm () {
+    function clearForm() {
         document.getElementById("firstName").value = null;
         document.getElementById("lastName").value = null;
         document.getElementById("userAge").value = null;
