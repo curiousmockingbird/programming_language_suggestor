@@ -21,6 +21,7 @@ HTML, CSS, Bootstrap and JavaScript.
 5. When submitting:
    a) If user is under 30 years old, likes action movies, likes to read, identifies with dogs, but doesn't believe much in miracles,
    the Programming Language Suggester will suggest JavaScript.
+   b) 
 
 
 ### Known bugs
