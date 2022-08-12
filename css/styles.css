@@ -19,6 +19,12 @@
     margin-bottom: 2%;
 }
 
+.hidden {
+display: none;
+
+}
+
+
 .javascript{
     text-align: center;
 }

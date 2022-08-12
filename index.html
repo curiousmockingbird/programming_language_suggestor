@@ -17,7 +17,7 @@
     <div class="container container-fix">
         <div class="row">
             <div class="col-12 bg-success tittle form_inputs_margin">
-                <h3><span class="tittlefix"> The </span> Programming Language Selector.</h3>
+                <h3><span class="tittlefix"> The </span> Programming Language Suggester.</h3>
                 <p>Here's a simple survey to suggest you a Programming Language based on the answers you choose:</p>
             </div>
         </div>
@@ -69,26 +69,26 @@
                     <div class="form-group form_inputs_margin">
                         <label for="hobby">What would you rather do in your free time?</label>
                         <select id="hobby" class="form-control">
-                          <option selected>Choose...</option>
-                          <option> Read a book </option>
-                          <option> Play video games </option>
-                          <option> Go to the gym </option>
-                          <option> Visit friends/family </option>
+                          <option selected value="0">Choose...</option>
+                          <option value = "1"> Read a book </option>
+                          <option value= "2"> Play video games </option>
+                          <option value= "3"> Go to the gym </option>
+                          <option value= "4"> Visit friends/family </option>
                         </select>
                       </div>
 
                       <!-- Animal -->
                       <h6> What animal would you rather be? </h6>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="animal" id="inlineRadio1" value="Dog" checked>
+                        <input class="form-check-input" type="radio" name="animal" id="inlineRadio1" value="1" checked>
                         <label class="form-check-label" for="inlineRadio1"> Dog</label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="animal" id="inlineRadio2" value="Cat">
+                        <input class="form-check-input" type="radio" name="animal" id="inlineRadio2" value="2">
                         <label class="form-check-label" for="inlineRadio2"> Cat </label>
                       </div>
                       <div class="form-check form-check-inline form_inputs_margin">
-                        <input class="form-check-input" type="radio" name="animal" id="inlineRadio3" value="Bird" >
+                        <input class="form-check-input" type="radio" name="animal" id="inlineRadio3" value="3" >
                         <label class="form-check-label" for="inlineRadio3"> Bird </label>
                       </div>
                       <!-- Scale -->
@@ -102,7 +102,7 @@
                 </form>
             </div>
             <!-- Results -->
-            <div class="col-6 bg-primary javascript">
+            <div class="col-6 bg-primary javascript hidden">
                 <h5 id="nameforJava"></h5>
                 <h4>Based on your answers,<br> you should consider to study</h4>
                 <h1>JavaScript</h1>
