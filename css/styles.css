@@ -1,35 +1,35 @@
-.container-fix{
-    margin-top: 2%;
+.container-fix {
+  margin-top: 2%;
 }
 
 .tittle {
-    padding: 3%;
-} 
+  padding: 3%;
+}
 
 .tittle p {
-    color: aliceblue;
+  color: aliceblue;
 }
 
 .tittlefix {
-    font-variant-caps: all-small-caps ;
-    color: aliceblue;
+  font-variant-caps: all-small-caps;
+  color: aliceblue;
 }
 
 .form_inputs_margin {
-    margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 .hidden {
-display: none;
+  display: none;
 
 }
 
 .rule {
-    color: aliceblue;
-    padding-top: 13%;
-    text-align: center;
+  color: aliceblue;
+  padding-top: 13%;
+  text-align: center;
 }
 
 .error {
-    color: crimson;
+  color: crimson;
 }

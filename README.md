@@ -19,16 +19,15 @@ HTML, CSS, Bootstrap and JavaScript.
 3. Open index.html in your browser.
 4. Complete survey.
 5. When submitting:
-   a) If user is under 30 years old, likes action movies, likes to read, identifies with dogs, but doesn't believe much in miracles,
-   the Programming Language Suggester will suggest JavaScript.
-   b) If user is older than 30, likes comedies, identifies with cats, but believes in miracles, the Suggester will indicate them to study
-   C#.
-   c) Else, the program will indicate to study Python.
-
+  a) If the user doesn't type in their name, an error messages will display in the page.
+  b) Else if the user doesn't select an option from the dropdown menu, an error message will display in the page. 
+  c) Else if the input average is >= 3 and <= 8, the Programming Language Suggester will suggest JavaScript.
+  d) Else if the input average is > 8 and < 15, the Programming Language Suggester will suggest C#.
+  e) Else if the input average is >= 15 and <= 21, the Programming Language Suggester will suggest Python.
+   
 
 ### Known bugs
 The branching for the program works. 
-If the user doesn't type in their name, an error messages will display in the page.
 
 
 Copyright (c) _Aug 12, 2022_ _Harold Mesa_
