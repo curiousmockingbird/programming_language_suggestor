@@ -29,5 +29,4 @@ HTML, CSS, Bootstrap and JavaScript.
 ### Known bugs
 The branching for the program works. 
 
-
 Copyright (c) _Aug 12, 2022_ _Harold Mesa_
