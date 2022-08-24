@@ -19,14 +19,16 @@ HTML, CSS, Bootstrap and JavaScript.
 3. Open index.html in your browser.
 4. Complete survey.
 5. When submitting:
-  a) If the user doesn't type in their name, an error messages will display in the page.
-  b) Else if the user doesn't select an option from the dropdown menu, an error message will display in the page. 
+  a) If the user doesn't type in their name or doesn't select an option from the dropdown menu, an error messages will display in the page.
+  b) Else, if after initial succesfull submision the user doesn't type in their name or doesn't select an option from the dropdown menu again, an error messages will display in the page and the previous suggested language wil be removed from the page.
   c) Else if the input average is >= 3 and <= 8, the Programming Language Suggester will suggest JavaScript.
   d) Else if the input average is > 8 and < 15, the Programming Language Suggester will suggest C#.
-  e) Else if the input average is >= 15 and <= 21, the Programming Language Suggester will suggest Python.
+  e) Else, the Programming Language Suggester will suggest Python.
    
 
 ### Known bugs
 The branching for the program works. 
 
-Copyright (c) _Aug 12, 2022_ _Harold Mesa_
+### License
+(MIT) https://en.wikipedia.org/wiki/MIT_License
+Copyright (c) _Aug 24, 2022_ _Harold Mesa_
